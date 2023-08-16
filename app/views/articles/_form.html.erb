@@ -1,4 +1,7 @@
-<%= form_with model: @article, local: true do |form| %>
+<link rel="stylesheet" href="articles.css">
+
+
+<%= form_with model: @article, local: true ,class: 'background-form' do |form| %>
  
   <% if @article.errors.any? %>
     <div id="error_explanation">

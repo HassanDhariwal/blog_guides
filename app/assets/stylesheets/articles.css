@@ -1,0 +1,52 @@
+th ,tr,td,p { 
+	color: black; 
+
+}
+table, th , td {
+	background: transparent;
+	border: 1px solid black;
+ 
+}
+img{
+	width: 40%;
+	height: 40%;
+}
+table {
+	width:100%;
+}
+button{
+	background: lightgray;
+}
+
+/* styles.css */
+.background-form {
+    background-image: url('mind.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    width: 15%;
+	height: 40%;
+
+    color: white; /* Adjust text color for better visibility */
+}
+
+.background-form h2 {
+    color: white; /* Adjust heading color */
+}
+
+.background-form ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.background-form ul li {
+    margin-bottom: 10px;
+}
+
+/* Additional styling for form fields */
+.background-form input, 
+.background-form textarea {
+    /* Your styling for form fields */
+}
+
+
