@@ -32,7 +32,10 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'bootstrap', '~> 5.3', '>= 5.3.1'
 gem 'pry', '~> 0.13.1'
+
+gem "bootsnap", require: false
 
 
 group :development, :test do
