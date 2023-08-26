@@ -1,13 +1,22 @@
-<%= form_with(model: [ @article, @article.comments.build ], local: true) do |form| %>
-  <p>
-    <%= form.label :commenter %><br>
-    <%= form.text_field :commenter %>
-  </p>
-  <p>
-    <%= form.label :body %><br>
-    <%= form.text_area :body %>
-  </p>
-  <p>
-    <%= form.submit %>
-  </p>
+<link rel="stylesheet" href="articles.css">
+
+<div class="form-container">
+
+<%= form_with(model: [ @article, @article.comments.build ], local: true , class: 'background-form' ) do |form| %>
+  <div class="col-md-8">
+    <%= form.label :commenter, class: "control-label" %>
+    <%= form.text_field :commenter, class: "form-control" %>
+  </div>
+  <div class="col-md-8">
+    <%= form.label :body , class:"control-label" %><br>
+    <%= form.text_area :body , class:"form-control" %>
+  </div><br>
+  <div>
+    <%= form.submit class: 'btn btn-outline-success' %>
+  </div><br>
+  <%= link_to 'Edit', edit_article_path(@article), class: "btn btn-outline-success"  %> |
+<%= link_to 'Back', articles_path , class: 'btn btn-outline-primary' %>
+
 <% end %>
+
+</div>
